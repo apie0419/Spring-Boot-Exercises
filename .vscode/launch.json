@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch AccessingDataJpaApplication",
+            "request": "launch",
+            "mainClass": "com.example.accessingdatajpa.AccessingDataJpaApplication",
+            "projectName": "accessing-data-jpa-initial"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringcacheApplication<springcache>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.springcache.SpringcacheApplication",
+            "projectName": "springcache",
+            "args": ""
+        }
+    ]
+}
