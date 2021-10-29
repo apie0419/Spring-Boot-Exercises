@@ -18,6 +18,13 @@
 	</properties>
 	<dependencies>
 
+		<dependency>
+			<groupId>com.github.ben-manes.caffeine</groupId>
+			<artifactId>caffeine</artifactId>
+			<version>3.0.4</version>
+		</dependency>
+
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -56,6 +63,18 @@
             <artifactId>guava</artifactId>
             <version>28.1-jre</version>
         </dependency>
+		<!-- for SpringBoot spring-cache -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+		<!-- for spring spring-cache -->
+		<!-- for spring spring-cache -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>5.1.8.RELEASE</version>
+		</dependency>
 	</dependencies>
 
 	<build>

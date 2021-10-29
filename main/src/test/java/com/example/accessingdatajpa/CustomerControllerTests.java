@@ -10,6 +10,9 @@ import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+import com.example.accessingdatajpa.customer.Customer;
+import com.example.accessingdatajpa.customer.CustomerController;
+import com.example.accessingdatajpa.customer.CustomerService;
 
 import org.springframework.test.web.servlet.MockMvc;
 

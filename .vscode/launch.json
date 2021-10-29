@@ -5,6 +5,13 @@
             "name": "Launch AccessingDataJpaApplication",
             "request": "launch",
             "mainClass": "com.example.accessingdatajpa.AccessingDataJpaApplication",
+            "projectName": "spring-boot-exercise"
+        },
+        {
+            "type": "java",
+            "name": "Launch AccessingDataJpaApplication",
+            "request": "launch",
+            "mainClass": "com.example.accessingdatajpa.AccessingDataJpaApplication",
             "projectName": "accessing-data-jpa-initial"
         },
         {

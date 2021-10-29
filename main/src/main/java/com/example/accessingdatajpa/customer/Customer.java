@@ -1,4 +1,4 @@
-package com.example.accessingdatajpa;
+package com.example.accessingdatajpa.customer;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,7 +23,7 @@ public class Customer {
 	@Override
 	public String toString() {
 	    return String.format(
-	      "{'id': %d, 'firstName': %s, 'lastName': %s}",
+	      "{\"id\": %d, \"firstName\": \"%s\", \"lastName\": \"%s\"}",
 	      id, firstName, lastName);
 	}
 
@@ -52,3 +52,4 @@ public class Customer {
 	}
 	
 }
+

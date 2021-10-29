@@ -2,10 +2,11 @@ package com.example.accessingdatajpa;
 
 import java.util.List;
 
+import com.example.accessingdatajpa.customer.Customer;
+import com.example.accessingdatajpa.customer.CustomerRepository;
 import com.google.common.collect.ImmutableList;
 
 import org.assertj.core.api.Assertions;
-import org.checkerframework.checker.units.qual.C;
 import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
