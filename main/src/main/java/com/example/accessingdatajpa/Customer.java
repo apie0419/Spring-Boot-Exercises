@@ -23,7 +23,7 @@ public class Customer {
 	@Override
 	public String toString() {
 	    return String.format(
-	      "Customer[id=%d, firstName='%s', lastName='%s']",
+	      "{'id': %d, 'firstName': %s, 'lastName': %s}",
 	      id, firstName, lastName);
 	}
 
@@ -37,6 +37,18 @@ public class Customer {
 
     public String getLastName() {
 	    return lastName;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+    public void setFirstName(String firstName) {
+	    this.firstName = firstName;
+	}
+
+    public void getLastName(String lastName) {
+	    this.lastName = lastName;
 	}
 	
 }

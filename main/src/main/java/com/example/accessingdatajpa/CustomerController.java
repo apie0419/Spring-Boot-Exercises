@@ -1,17 +1,18 @@
 package com.example.accessingdatajpa;
 
 import java.util.List;
+import java.util.Objects;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class CustomerController {
 	
 	@Autowired
@@ -30,5 +31,13 @@ public class CustomerController {
 	@PostMapping(value="/addCustomer", produces=MediaType.APPLICATION_JSON_VALUE, consumes=MediaType.APPLICATION_JSON_VALUE)
 	public Customer addCustomer(@RequestBody Customer form) {
 		return service.add(form);
+	}
+
+	@DeleteMapping(value="/deleteCustomer/{id}")
+	public void delteCustomer(@PathVariable Long id){
+		Customer customer = service.getCustomer(id);
+		if (Objects.nonNull(customer)){
+			service.delete(customer);
+		}
 	}
 }

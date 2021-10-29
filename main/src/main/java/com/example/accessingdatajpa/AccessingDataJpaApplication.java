@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AccessingDataJpaApplication {
 
   public static void main(String[] args) {
-    SpringApplicadtion.run(AccessingDataJpaApplication.class);
+    SpringApplication.run(AccessingDataJpaApplication.class);
   }
 
 }

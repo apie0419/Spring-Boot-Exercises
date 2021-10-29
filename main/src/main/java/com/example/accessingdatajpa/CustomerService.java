@@ -15,10 +15,12 @@ public class CustomerService {
 	public Customer getCustomer(long id) {
 		return repository.findById(id);
 	}
-	public Customer add(Customer form) {
-		return repository.save(form);
+	public Customer add(Customer customer) {
+		return repository.save(customer);
 	}
-	
+	public void delete(Customer customer){
+		repository.delete(customer);
+	}
 	public List<Customer> getAllCustomers(){
 		return ImmutableList.copyOf(repository.findAll());
 	}
